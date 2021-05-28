@@ -17,3 +17,7 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+  
+- script: |
+    THIS IS ONE BIG TEST echo See https://aka.ms/yaml
+  displayName: 'Some other script that I want to run script'
