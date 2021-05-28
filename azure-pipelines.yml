@@ -1,4 +1,3 @@
-# Starter pipeline
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
@@ -21,3 +20,10 @@ steps:
 - script: |
     echo THIS IS ONE BIG TEST echo See https://aka.ms/yaml
   displayName: 'Some other script that I want to run script'
+
+- task: AzureCLI@2
+  inputs:
+    azureSubscription: 'DevSubscription(0abb6ec5-9030-4b3f-af04-09183c688576)'
+    scriptType: 'bash'
+    scriptLocation: 'scriptPath'
+    scriptPath: './build_and_delete.sh'
