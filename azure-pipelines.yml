@@ -19,5 +19,5 @@ steps:
   displayName: 'Run a multi-line script'
   
 - script: |
-    THIS IS ONE BIG TEST echo See https://aka.ms/yaml
+    echo THIS IS ONE BIG TEST echo See https://aka.ms/yaml
   displayName: 'Some other script that I want to run script'
