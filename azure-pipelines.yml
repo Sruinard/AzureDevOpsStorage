@@ -9,17 +9,8 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
-
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
-  
-- script: |
-    echo THIS IS ONE BIG TEST echo See https://aka.ms/yaml
-  displayName: 'Some other script that I want to run script'
+- script: echo First Run!
+  displayName: 'Running a one-line script'
 
 - task: AzureCLI@2
   inputs:
